@@ -8,5 +8,7 @@ Under the name space "ShopBridge.Api.SqlDataAccess", need to mention the connect
 Run the code
 
 Screenshot:
-
+Add the Connection String and run the api
 <img width="821" alt="Shop bridge Connection String" src="https://user-images.githubusercontent.com/83872801/117670030-26a5b600-b1c5-11eb-9b3e-b04ab81c2be2.png">
+<img width="883" alt="postman" src="https://user-images.githubusercontent.com/83872801/117670593-af245680-b1c5-11eb-8a08-d431c78d1cd2.png">
+
