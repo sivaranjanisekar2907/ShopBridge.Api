@@ -1,9 +1,9 @@
 ﻿using ShopBridge.Api.Abstraction;
+using ShopBridge.Api.Logging;
 using ShopBridge.Api.Model;
 using ShopBridge.Api.SqlDataAccess;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,6 +46,7 @@ namespace ShopBridge.Api.Repository
             }
             catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
             }
 
@@ -68,6 +69,7 @@ namespace ShopBridge.Api.Repository
             }
             catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
             }
 
@@ -83,8 +85,8 @@ namespace ShopBridge.Api.Repository
             }
             catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
-                throw;
             }
         }
 
@@ -96,8 +98,8 @@ namespace ShopBridge.Api.Repository
             }
             catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
-                throw;
             }
         }
 
@@ -128,6 +130,7 @@ namespace ShopBridge.Api.Repository
             }
             catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
             }
 
