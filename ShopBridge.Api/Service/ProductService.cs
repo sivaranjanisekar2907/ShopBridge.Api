@@ -1,4 +1,5 @@
 ﻿using ShopBridge.Api.Abstraction;
+using ShopBridge.Api.Logging;
 using ShopBridge.Api.Model;
 using ShopBridge.Api.Repository;
 using System;
@@ -78,16 +79,25 @@ namespace ShopBridge.Api.Service
                
                 return lstProducts;
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
+                Logger.LogException(ex);
                 return null;
             }
         }
         // Delete the products
         public async Task<Response> DeleteProductAsync(DeleteProductCommand commands)
         {
-            var response = await _productRepository.DeleteProductAsync(commands); 
-            return response;
+            try
+            {
+                var response = await _productRepository.DeleteProductAsync(commands);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                Logger.LogException(ex);
+                return null;
+            }
         }
 
       
