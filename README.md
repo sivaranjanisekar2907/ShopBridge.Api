@@ -7,6 +7,3 @@ Download the code from the repo
 Under the name space "ShopBridge.Api.SqlDataAccess", need to mention the connection string in the method "getConnectionString".
 Run the code
 
-Screenshot:
-
-<img width="821" alt="Shop bridge Connection String" src="https://user-images.githubusercontent.com/83872801/117670030-26a5b600-b1c5-11eb-9b3e-b04ab81c2be2.png">
